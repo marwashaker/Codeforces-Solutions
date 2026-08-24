@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+       Scanner in=new Scanner(System.in);
+       int [][]a= new int[5][5];
+       for(int r=0;r<5;r++){
+           for(int c=0;c<5;c++){
+               a[r][c]=in.nextInt();
+           }
+       }
+        for(int r=0;r<5;r++){
+           for(int c=0;c<5;c++){
+           if(a[r][c]==1){
+               int moves=Math.abs(r-2)+Math.abs(c-2);
+               System.out.println(moves);
+               return;
+           }
+           }
+           }
+    }
+}
