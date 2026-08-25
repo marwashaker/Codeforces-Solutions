@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+       Scanner in=new Scanner(System.in);
+      String L1=in.nextLine();
+      String L2=in.nextLine();
+      if(L1.compareToIgnoreCase(L2)<0){
+          System.out.println("-1");
+      }
+      else if(L2.compareToIgnoreCase(L1)<0){
+          System.out.println("1");
+      }    
+      else{
+          System.out.println("0");
+      }
+    }
+}
