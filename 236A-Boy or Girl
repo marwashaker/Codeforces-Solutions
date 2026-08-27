@@ -1,0 +1,14 @@
+import java.util.Scanner;
+ public class Main {
+    public static void main(String[] args) {
+       Scanner in=new Scanner(System.in);
+      String x=in.next();
+      long count =x.chars().distinct().count();
+      if(count%2==0){
+          System.out.println("CHAT WITH HER!");
+      }
+      else{
+          System.out.println("IGNORE HIM!");
+      }    
+    }
+}
