@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+long long fun(long long n) {
+    if (n % 2 == 0) {
+        return n / 2;
+    } else {
+        return -(n + 1) / 2;
+    }
+}
+
+int main() {
+    long long n;
+    cin >> n;
+    cout << fun(n);
+
+    return 0;
+}
